@@ -1,0 +1,101 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap'); /* Poppins */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(./images/weather-background.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(38, 39, 39, 0.677);
+    padding: 5px;
+}
+
+header h1 {
+    color: rgb(39, 100, 98);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px 0 0 0;
+    gap: 20px;
+    width: 100%;
+}
+
+.input-container input {
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    background-color: rgb(216, 216, 216);
+}
+
+.input-container input:focus {
+    outline: none;
+}
+
+.input-container button {
+    padding: 10px;
+    width: 30%;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(39, 100, 98);
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-container button:hover {
+    background-color: rgb(68, 146, 143);
+}
+
+#weather-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.card {
+    background-color: rgba(200, 200, 200, 0.689);
+}
+
+/* Media queries */
+
+@media only screen and (min-width: 1200px) {
+    
+    .input-container input {
+        width: 30%;
+    }
+    
+    
+    .input-container button {
+        width: 15%;
+    }
+    
+    #weather-box {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+}
