@@ -18,7 +18,14 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=4c
                             </div>`
 })
 
-.catch(err => console.log('Wrong city name!'))
+.catch(err => Swal.fire({
+    title: 'No tenemos ese dato 😔',
+    toast: true,
+    position: 'top-end',
+    timer: 2000,
+    timerProgressBar: true,
+    showConfirmButton: false
+}))
 
 input.value = ""
 
