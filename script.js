@@ -30,3 +30,10 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=4c
 input.value = ""
 
 })
+
+input.addEventListener('keypress', (e) =>{
+    if (e.key === "Enter") {
+        e.preventDefault();
+        btnCheck.click();
+    }
+})

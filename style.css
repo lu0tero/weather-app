@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url(./images/weather-background.gif);
+    background-image: url(./images/weather2-background.gif);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -19,13 +19,25 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(38, 39, 39, 0.677);
+    background-color: rgb(36, 36, 36);
     padding: 5px;
 }
 
 header h1 {
-    color: rgb(39, 100, 98);
+    color: rgb(89, 189, 119);
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+header img {
+    width: 60px;
+    border-radius: 50%;
+    object-fit: scale-down;
+}
+
+h1-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .input-container {
@@ -56,13 +68,13 @@ header h1 {
     width: 30%;
     border-radius: 10px;
     border: none;
-    background-color: rgb(39, 100, 98);
+    background-color: rgb(61, 133, 83);
     color: whitesmoke;
     font-family: 'Poppins', sans-serif;
 }
 
 .input-container button:hover {
-    background-color: rgb(68, 146, 143);
+    background-color: rgb(25, 103, 51);
 }
 
 #weather-box {
